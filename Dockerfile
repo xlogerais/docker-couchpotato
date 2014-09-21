@@ -1,5 +1,5 @@
 #
-#
+# Dockerfile for couchpotato (french version)
 #
 FROM python:2
 
@@ -11,7 +11,7 @@ RUN useradd -m couchpotato
 # Download latest version
 USER couchpotato
 WORKDIR /home/couchpotato
-RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git ./app
+RUN git clone https://github.com/sarakha63/CouchPotatoServer ./app
 
 # Create a volume for movies
 USER couchpotato
